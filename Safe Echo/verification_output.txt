@@ -1,0 +1,36 @@
+
+Testing: Known Scam (Unknown Number)
+Text: Your Netflix account will be suspended today unless you update payment info here: [link]
+Context: {'is_saved_contact': False}
+Result: {'is_scam': True, 'reason': "⏳ **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.", 'confidence': 51}
+✅ PASS
+
+Testing: Safe Message (Saved Contact)
+Text: Hey, are we still on for dinner tonight?
+Context: {'is_saved_contact': True}
+Result: {'is_scam': False, 'reason': '✅ **Safe**: This message looks like a normal conversation.', 'confidence': 95}
+✅ PASS
+
+Testing: Suspicious Keyword (Saved Contact) -> Should be Safe due to high threshold
+Text: Please verify your account immediately.
+Context: {'is_saved_contact': True}
+Result: {'is_scam': False, 'reason': '✅ **Safe**: This message looks like a normal conversation.', 'confidence': 95}
+✅ PASS
+
+Testing: Suspicious Keyword (Unknown Number) -> Should be Scam
+Text: Please verify your account immediately.
+Context: {'is_saved_contact': False}
+Result: {'is_scam': True, 'reason': '🛑 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.', 'confidence': 70}
+✅ PASS
+
+Testing: New Scam from List (Unknown Number)
+Text: Urgent: Your Wells Fargo card starting ****1234 was used at Target $412. Confirm or decline?
+Context: {'is_saved_contact': False}
+Result: {'is_scam': True, 'reason': "⏳ **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.", 'confidence': 61}
+✅ PASS
+
+Testing: User Reported Family Emergency Scam (Unknown Number)
+Text: mom I  need 50,000, pls transfer that money in Uncles UPI
+Context: {'is_saved_contact': False}
+Result: {'is_scam': True, 'reason': "⚠️ **Keyword Alert**: Contains suspicious word 'transfer'.", 'confidence': 85}
+✅ PASS

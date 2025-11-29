@@ -38,11 +38,18 @@ def get_simple_explanation(text):
 
     return None
 
-def analyze_text(text):
+def analyze_text(text, context=None):
     """
     Analyzes text using the trained ML model.
+    Context: dict with keys like 'is_saved_contact' (bool)
     """
     global model
+    
+    # Default context
+    if context is None:
+        context = {}
+    
+    is_saved = context.get('is_saved_contact', False)
     
     # 1. ML Prediction (if model exists)
     if model:
@@ -54,8 +61,16 @@ def analyze_text(text):
             probability = model.predict_proba([text])[0][scam_idx]
             confidence = int(probability * 100)
             
-            # Threshold: 0.4 (40%) - More sensitive than default 0.5
-            if probability > 0.4:
+            # Threshold logic
+            # Default strict threshold for unknown numbers
+            threshold = 0.4 
+            
+            if is_saved:
+                # Relaxed threshold for saved contacts to avoid false positives
+                # Only flag if very high confidence
+                threshold = 0.85
+            
+            if probability > threshold:
                 # GENERATE SIMPLE EXPLANATION
                 reason = get_simple_explanation(text)
                 
@@ -81,9 +96,15 @@ def analyze_text(text):
         "western union", "visa fee", "soulmate", "destiny", "flight delayed", "investment", "returns", 
         "ticker", "security patch", "admin access", "support line", "microsoft", "diagnostic tool",
         "otp", "cvv", "lottery", "prize", "click here", "winner", "cash", "refund", "blocked", 
-        "suspended", "kyc", "pan card", "aadhar", "sim card", "electricity", "ransom", "arrest"
+        "suspended", "kyc", "pan card", "aadhar", "sim card", "electricity", "ransom", "arrest",
+        "transfer", "upi", "gpay", "paytm", "lost phone", "new number"
     ]
     
+    # If saved contact, only check for very specific high-danger keywords if ML failed or didn't run
+    if is_saved:
+        # Reduced list for saved contacts
+        scam_keywords = ["password", "ssn", "cvv", "otp"]
+
     text_lower = text.lower()
     for word in scam_keywords:
         if word in text_lower:
@@ -158,7 +179,7 @@ def process_audio_input(audio_file, language_code):
     except Exception as e:
         return None, f"Error: {e}"
 
-def analyze_audio(audio_file, language="English"):
+def analyze_audio(audio_file, language="English", context=None):
     """
     Analyzes audio for deepfakes AND content scams.
     """
@@ -170,7 +191,7 @@ def analyze_audio(audio_file, language="English"):
     
     if original_text and "Error" not in english_text:
         # Run the text analysis on the transcribed/translated text
-        content_result = analyze_text(english_text)
+        content_result = analyze_text(english_text, context=context)
         content_result["transcript"] = original_text
         content_result["translation"] = english_text
 

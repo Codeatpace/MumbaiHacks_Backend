@@ -48,7 +48,26 @@ def train_text_model():
         print("❌ Error: Dataset is empty or could not be loaded.")
         return
 
-    print(f"Loaded {len(df)} samples.")
+    print(f"Loaded {len(df)} samples from main dataset.")
+
+    # Load new scams
+    new_scams_file = "new_scams.csv"
+    if os.path.exists(new_scams_file):
+        df_new = load_dataset(new_scams_file) # Re-using load_dataset might fail if format differs slightly, but let's check. 
+        # Actually new_scams.csv is comma separated, fraud_call.file was tab separated but load_dataset handles csv with tab fallback?
+        # Let's look at load_dataset again. It uses pd.read_csv with sep='\t'.
+        # We should probably just read it directly since we know the format of new_scams.csv
+        try:
+            df_new = pd.read_csv(new_scams_file, header=None, names=['label', 'text'])
+            # Ensure labels are mapped if needed, but they are already 'fraud'
+            df_new['label'] = df_new['label'].map({'fraud': 'scam', 'normal': 'safe'})
+            df_new = df_new.dropna(subset=['label'])
+            print(f"Loaded {len(df_new)} samples from new scams.")
+            df = pd.concat([df, df_new], ignore_index=True)
+        except Exception as e:
+            print(f"Error loading new scams: {e}")
+
+    print(f"Total samples: {len(df)}")
     print(df['label'].value_counts())
 
     # Split data for evaluation

@@ -1,5 +1,237 @@
 [
     {
+        "Time": "06:56 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:56:07.952255"
+    },
+    {
+        "Time": "06:56 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:56:07.942852"
+    },
+    {
+        "Time": "06:55 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:55:47.784567"
+    },
+    {
+        "Time": "06:55 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:55:47.770510"
+    },
+    {
+        "Time": "06:55 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:55:21.871156"
+    },
+    {
+        "Time": "06:55 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:55:21.863795"
+    },
+    {
+        "Time": "06:54 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-29T06:54:44.539672"
+    },
+    {
+        "Time": "06:52 AM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "\u26a0\ufe0f **Keyword Alert**: Contains suspicious word 'transfer'.",
+        "Timestamp": "2025-11-29T06:52:39.727810"
+    },
+    {
+        "Time": "06:52 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:52:39.707928"
+    },
+    {
+        "Time": "06:52 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:52:39.687342"
+    },
+    {
+        "Time": "06:52 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:52:39.642589"
+    },
+    {
+        "Time": "06:50 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:50:27.479885"
+    },
+    {
+        "Time": "06:50 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:50:27.454628"
+    },
+    {
+        "Time": "06:50 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:50:27.444258"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:39:41.984035"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:39:41.967082"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:39:41.937367"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:39:18.889739"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:39:18.865773"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:39:18.846445"
+    },
+    {
+        "Time": "06:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:39:18.824980"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:34:23.218526"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:34:23.203206"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:34:23.169108"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:34:23.122942"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:34:01.398244"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:34:01.323019"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-29T06:34:01.238143"
+    },
+    {
+        "Time": "06:34 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\u23f3 **Panic Trick**: Scammers use scary words like 'Urgent' or 'Jail' to make you act without thinking. Take a deep breath.",
+        "Timestamp": "2025-11-29T06:34:01.214014"
+    },
+    {
         "Time": "05:36 AM",
         "Type": "Audio Call",
         "Risk": "High",
