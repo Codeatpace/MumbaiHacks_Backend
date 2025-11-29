@@ -65,98 +65,85 @@ def main():
                 simulate_message_interception()
 
     with tab2:
-        st.header("🎤 Real-Time Audio Guardian")
-        st.write("SafeEcho will listen continuously and flag scams as they happen.")
+        st.header("🎤 Live Conversation Monitor")
+        st.write("Real-time analysis of ongoing conversation.")
         
         # Language Selector
         lang = st.selectbox("Select Language", ["English", "Hindi", "Marathi"])
         
-        # Session state for listening
-        if 'listening' not in st.session_state:
-            st.session_state.listening = False
+        mode = st.radio("Mode", ["Single Record (File)", "Continuous Live Monitor (Local Mic)"])
+        
+        if mode == "Single Record (File)":
+            # Audio Input
+            audio_value = st.audio_input("Record Voice")
             
-        col1, col2 = st.columns(2)
-        with col1:
-            start_btn = st.button("▶️ Start Listening", type="primary", use_container_width=True)
-        with col2:
-            stop_btn = st.button("⏹️ Stop", type="secondary", use_container_width=True)
-            
-        if start_btn:
-            st.session_state.listening = True
-        if stop_btn:
-            st.session_state.listening = False
-            st.rerun()
-            
-        # Real-time Loop
-        if st.session_state.listening:
-            import speech_recognition as sr
-            from deep_translator import GoogleTranslator
-            
-            st.success("👂 Listening... (Speak now)")
-            status_container = st.empty()
-            transcript_container = st.container()
-            
-            r = sr.Recognizer()
-            r.energy_threshold = 300
-            r.dynamic_energy_threshold = True
-            r.pause_threshold = 0.5 # Short pause to process chunks faster
-            
-            # Use the default microphone
-            try:
-                with sr.Microphone() as source:
-                    r.adjust_for_ambient_noise(source, duration=0.5)
+            if audio_value:
+                st.audio(audio_value)
+                
+                with st.spinner(f"Listening & Translating ({lang})..."):
+                    result = guardian.analyze_audio(audio_value, language=lang)
+                
+                # Display Results
+                if "content_analysis" in result:
+                    ca = result["content_analysis"]
                     
-                    # Continuous loop
-                    while st.session_state.listening:
+                    st.markdown("### 📝 Transcript")
+                    st.info(f"**Original:** {ca.get('transcript', '...')}")
+                    if lang != "English":
+                        st.info(f"**Translated:** {ca.get('translation', '...')}")
+                    
+                    st.markdown("### 🛡️ Analysis")
+                    if result["is_scam"]:
+                        st.error(f"🚨 **SCAM DETECTED** ({result['confidence']}%)")
+                        st.write(f"**Reason:** {result['reason']}")
+                    else:
+                        st.success("✅ **Audio seems Safe**")
+                        st.write(f"**Reason:** {result['reason']}")
+
+        else:
+            # Continuous Mode
+            st.info("🔴 **Live Monitoring Active**: Speak into your microphone. The system will analyze chunks of speech in real-time.")
+            
+            if st.button("Start Monitoring"):
+                import speech_recognition as sr
+                r = sr.Recognizer()
+                r.energy_threshold = 300
+                r.dynamic_energy_threshold = True
+                
+                status_placeholder = st.empty()
+                transcript_placeholder = st.empty()
+                alert_placeholder = st.empty()
+                
+                full_transcript = []
+                
+                with sr.Microphone() as source:
+                    status_placeholder.warning("Adjusting for ambient noise... Please wait.")
+                    r.adjust_for_ambient_noise(source, duration=1)
+                    status_placeholder.success("Listening... (Refresh page to stop)")
+                    
+                    while True:
                         try:
-                            status_container.info("Listening for phrase...")
-                            # Listen for a short phrase (up to 5 seconds)
-                            audio_data = r.listen(source, timeout=1, phrase_time_limit=5)
+                            # Listen for a phrase
+                            audio_chunk = r.listen(source, phrase_time_limit=5)
                             
-                            status_container.warning("Processing...")
+                            # Analyze
+                            result = guardian.analyze_audio(audio_chunk, language=lang)
                             
-                            # 1. Transcribe
-                            lang_map = {"English": "en-US", "Hindi": "hi-IN", "Marathi": "mr-IN"}
-                            api_lang = lang_map.get(lang, "en-US")
-                            
-                            text = r.recognize_google(audio_data, language=api_lang)
-                            
-                            # 2. Translate if needed
-                            english_text = text
-                            if lang != "English":
-                                english_text = GoogleTranslator(source='auto', target='en').translate(text)
-                            
-                            # 3. Analyze
-                            result = guardian.analyze_text(english_text)
-                            
-                            # 4. Display Result
-                            with transcript_container:
-                                with st.chat_message("user"):
-                                    st.write(f"**You ({lang}):** {text}")
-                                    if lang != "English":
-                                        st.caption(f"Translated: {english_text}")
-                                
-                                if result["is_scam"]:
-                                    with st.chat_message("assistant", avatar="🚨"):
-                                        st.error(f"**SCAM DETECTED!** ({result['confidence']}%)")
-                                        st.write(f"Reason: {result['reason']}")
-                                        # Play alert sound (optional/simulated)
-                                        # st.audio("alert.mp3", autoplay=True)
-                                else:
-                                    with st.chat_message("assistant", avatar="✅"):
-                                        st.success("Safe.")
+                            if "content_analysis" in result:
+                                ca = result["content_analysis"]
+                                text = ca.get('transcript', '')
+                                if text:
+                                    full_transcript.append(f"You: {text}")
+                                    transcript_placeholder.markdown("\n\n".join(full_transcript))
+                                    
+                                    if result["is_scam"]:
+                                        alert_placeholder.error(f"🚨 SCAM DETECTED: {result['reason']}")
+                                    else:
+                                        alert_placeholder.success(f"✅ Safe: {result['reason']}")
                                         
-                        except sr.WaitTimeoutError:
-                            continue # No speech detected, keep listening
-                        except sr.UnknownValueError:
-                            continue # Speech unintelligible
                         except Exception as e:
-                            st.error(f"Error: {e}")
+                            status_placeholder.error(f"Error: {e}")
                             break
-                            
-            except Exception as e:
-                st.error(f"Microphone Error: {e}. Make sure a microphone is connected.")
-                st.session_state.listening = False
 
     with tab3:
         st.header("🔍 Manual Message Analysis")

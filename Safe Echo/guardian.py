@@ -140,12 +140,15 @@ def process_audio_input(audio_file, language_code):
     r.pause_threshold = 0.8
     
     try:
-        # Load audio file
-        with sr.AudioFile(audio_file) as source:
-            # Calibrate for background noise (crucial for bad mics)
-            print("Calibrating for noise...")
-            r.adjust_for_ambient_noise(source, duration=0.5)
-            audio_data = r.record(source)
+        # Load audio file or use existing AudioData
+        if isinstance(audio_file, sr.AudioData):
+            audio_data = audio_file
+        else:
+            with sr.AudioFile(audio_file) as source:
+                # Calibrate for background noise (crucial for bad mics)
+                print("Calibrating for noise...")
+                r.adjust_for_ambient_noise(source, duration=0.5)
+                audio_data = r.record(source)
             
         # Transcribe
         # Map UI languages to Google Speech API codes
