@@ -1,0 +1,10 @@
+streamlit
+firebase-admin
+openai
+pandas
+scikit-learn
+joblib
+SpeechRecognition
+pyaudio
+deep-translator
+    

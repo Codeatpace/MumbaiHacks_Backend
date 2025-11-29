@@ -1,0 +1,570 @@
+[
+    {
+        "Time": "05:36 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \u26a0\ufe0f **Keyword Alert**: Contains suspicious word 'otp'.",
+        "Timestamp": "2025-11-29T05:36:00.761984"
+    },
+    {
+        "Time": "05:36 AM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "\u26a0\ufe0f **Keyword Alert**: Contains suspicious word 'otp'.",
+        "Timestamp": "2025-11-29T05:36:00.757085"
+    },
+    {
+        "Time": "09:40 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-28T09:40:13.672217"
+    },
+    {
+        "Time": "09:40 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-28T09:40:13.670711"
+    },
+    {
+        "Time": "09:40 AM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-28T09:40:04.328596"
+    },
+    {
+        "Time": "09:40 AM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-28T09:40:04.325572"
+    },
+    {
+        "Time": "09:39 AM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-28T09:39:22.194567"
+    },
+    {
+        "Time": "11:13 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T23:13:07.219442"
+    },
+    {
+        "Time": "11:13 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T23:13:07.217935"
+    },
+    {
+        "Time": "11:12 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-27T23:12:44.751847"
+    },
+    {
+        "Time": "11:12 PM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-27T23:12:44.749831"
+    },
+    {
+        "Time": "11:12 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-27T23:12:01.577317"
+    },
+    {
+        "Time": "11:12 PM",
+        "Type": "SMS/Text",
+        "Risk": "Low",
+        "Status": "Flagged",
+        "Details": "\ud83e\udd16 **AI Warning**: This message has patterns seen in scams. Proceed with caution.",
+        "Timestamp": "2025-11-27T23:12:01.574326"
+    },
+    {
+        "Time": "11:02 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: None",
+        "Timestamp": "2025-11-27T23:02:45.384533"
+    },
+    {
+        "Time": "11:02 PM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": null,
+        "Timestamp": "2025-11-27T23:02:45.383533"
+    },
+    {
+        "Time": "10:57 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:57:06.663661"
+    },
+    {
+        "Time": "10:57 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:57:06.661660"
+    },
+    {
+        "Time": "10:56 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T22:56:47.368358"
+    },
+    {
+        "Time": "10:51 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83d\udc94 **Romance Scam**: Be careful when someone you met online asks for money. Real love doesn't cost $500.",
+        "Timestamp": "2025-11-27T22:51:23.274598"
+    },
+    {
+        "Time": "10:51 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\udc94 **Romance Scam**: Be careful when someone you met online asks for money. Real love doesn't cost $500.",
+        "Timestamp": "2025-11-27T22:51:23.269060"
+    },
+    {
+        "Time": "10:50 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:50:05.186364"
+    },
+    {
+        "Time": "10:50 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:50:05.185363"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:48.327268"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:48.327268"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:34.196763"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:34.195760"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:16.947383"
+    },
+    {
+        "Time": "10:49 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:49:16.945387"
+    },
+    {
+        "Time": "10:47 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:47:41.549057"
+    },
+    {
+        "Time": "10:47 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:47:41.547550"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:57.440867"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:56.600240"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:56.589729"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:56.417421"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:56.415422"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\udcbb **Fake Support**: Microsoft will never call or email you to fix your computer. Do not let them control your screen.",
+        "Timestamp": "2025-11-27T22:43:31.383788"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:30.367606"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:30.355016"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:30.203406"
+    },
+    {
+        "Time": "10:43 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:43:30.198879"
+    },
+    {
+        "Time": "10:42 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:42:28.084796"
+    },
+    {
+        "Time": "10:42 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:42:28.083797"
+    },
+    {
+        "Time": "10:42 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:42:23.008376"
+    },
+    {
+        "Time": "10:42 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:42:23.006868"
+    },
+    {
+        "Time": "10:42 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T22:42:21.877160"
+    },
+    {
+        "Time": "10:12 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:12:05.354057"
+    },
+    {
+        "Time": "10:12 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:12:05.351058"
+    },
+    {
+        "Time": "10:10 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:10:03.990001"
+    },
+    {
+        "Time": "10:10 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:10:03.988401"
+    },
+    {
+        "Time": "10:10 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T22:10:00.368108"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:56.094886"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:56.092886"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:48.953902"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:48.950911"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:43.886876"
+    },
+    {
+        "Time": "10:09 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:09:43.885872"
+    },
+    {
+        "Time": "10:08 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Scam Content Detected in Audio: \ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:08:06.755764"
+    },
+    {
+        "Time": "10:08 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83e\udd16 **AI Warning**: This message looks like other scams we've seen. It's safer to ignore it.",
+        "Timestamp": "2025-11-27T22:08:06.753760"
+    },
+    {
+        "Time": "10:01 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Synthetic voice pattern matched (Deepfake)",
+        "Timestamp": "2025-11-27T22:01:57.017591"
+    },
+    {
+        "Time": "09:51 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "\ud83d\uded1 **Account Risk**: Someone is trying to steal your password. Never click links that ask you to log in.",
+        "Timestamp": "2025-11-27T21:51:27.720050"
+    },
+    {
+        "Time": "09:51 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Synthetic voice pattern matched (Deepfake)",
+        "Timestamp": "2025-11-27T21:51:24.623489"
+    },
+    {
+        "Time": "09:41 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:41:57.329374"
+    },
+    {
+        "Time": "09:36 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:36:52.449563"
+    },
+    {
+        "Time": "09:36 PM",
+        "Type": "SMS/Text",
+        "Risk": "Medium",
+        "Status": "Quarantined",
+        "Details": "Suspicious urgency detected (keyword: 'verify')",
+        "Timestamp": "2025-11-27T21:36:25.209332"
+    },
+    {
+        "Time": "09:36 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:36:06.079912"
+    },
+    {
+        "Time": "09:35 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:35:57.320034"
+    },
+    {
+        "Time": "09:35 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:35:48.477630"
+    },
+    {
+        "Time": "09:33 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:33:45.965834"
+    },
+    {
+        "Time": "09:33 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:33:34.442641"
+    },
+    {
+        "Time": "09:33 PM",
+        "Type": "SMS/Text",
+        "Risk": "High",
+        "Status": "Quarantined",
+        "Details": "ML Model detected scam pattern",
+        "Timestamp": "2025-11-27T21:33:05.980800"
+    },
+    {
+        "Time": "09:33 PM",
+        "Type": "Audio Call",
+        "Risk": "High",
+        "Status": "Blocked",
+        "Details": "Synthetic voice pattern matched (Deepfake)",
+        "Timestamp": "2025-11-27T21:33:01.629326"
+    }
+]
